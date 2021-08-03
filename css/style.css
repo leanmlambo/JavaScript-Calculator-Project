@@ -1,0 +1,14 @@
+
+body{
+    background-color: purple;
+}
+ .bg-image{
+     background-image:url("../images/calculator.jpg");
+     height:100vh; 
+     filter:blur(8px);-wibkit-filter:blur(8px);
+     width: 100%;
+     background-repeat:no-repeat;
+     background-position:center;
+     background-size:cover
+
+ }
