@@ -12,3 +12,67 @@ body{
      background-size:cover
 
  }
+ .calculator-grid{
+     display:grid;
+     justify-content: center;
+     align-content: center;
+     min-height: 100vh;
+     grid-template-columns: repeat(4, 100px);
+     grid-template-rows: minmax(120, auto)repeat(5, 100px);
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform:translate(-50%, -50%);
+     width: 80%;
+     padding: 20px;
+
+ }
+ .calculator-grid > button{
+     cursor:pointer;
+     font-size:2rem;
+     border:1px solid purple;
+     outline:none;
+     background-color:blue;
+     transition:background-color .5s;
+
+ }
+ .calculator-grid>button:hover{
+     background-color: crimson;
+     
+
+ }
+ .span-two{
+     grid-column: span 2
+ }
+ .output{
+     grid-column: 1/-1;
+     background-color: crimson;
+     display: flex;
+     align-items:flex-end;
+     justify-content:space-between;
+     flex-direction:column;
+     padding: 10px;
+     word-wrap:break-word;
+     word-wrap:break-all;
+
+
+ }
+ .output .previous-operand {
+     color: darkblue;
+     font-size: 1.5rem;
+ }
+ .output.current-operand{
+     color: darkmagenta;
+     font-size: 1.5rem;
+ }
+ 
+
+
+
+
+
+
+
+
+
+
